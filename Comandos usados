@@ -1,0 +1,12 @@
+1) git init ejgh
+2) en github, +, new repository, llenar formulario, create repository
+3) gedit README
+4) git remote add origin https://github.com/juliocrv20/ejgh.git
+5) cp/home/julrv/"Taller de Herramientas Computacionales.txt" /home/julrv/ejgh
+    git add "Taller de Herramientas Computacionales.txt"
+    git commit -m "Tarea"
+    git remote add origin https://github.com/juliocrv20/ejgh.git
+    git remote add origin https://github.com/juliocrv20/ejgh.git
+    Username for 'https://github.com': juliocrv20
+    Password for 'https://juliocrv20@github.com': 
+
