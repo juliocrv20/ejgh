@@ -1,0 +1,48 @@
+8 Ejercicios
+════════════
+
+  • Escribe la ruta absoluta para referirte a todos los archivos que
+    inician con "s" y terminan con ".log" en el directorio
+  "/var/log/"
+ 1) find /home/julrv/var/log -name "[s]*.log"
+
+
+  • Escribe la ruta relativa para referirte los mismos archivos desde
+    los directorios /, /usr/share, /facultad/calculo/ayudantia/ y
+    /usr/local/bin
+ 2) desde "/": find home/julrv/var/log/s*.log
+
+
+  • Crea un directorio llamado miPractica que contenga dos
+    subdirectorios llamados usuarios y archivo y que esten en el
+    directorio base.
+ 3) mkdir -p /home/julrv/miPractica/usuarios
+    mkdir /home/julrv/miPractica/archivo
+
+
+  • Crea un archivo llamado raizArchivos.dat en el subdirectorio
+    archivos del directorio miPractica que contenga el listado de los
+    archivos y directorios del directorio. Redirecciona la salida de ls.
+ 4) touch /home/julrv/miPractica/archivo/raizArchivos.dat
+    cd /home/julrv/miPractica/archivo
+    ls /home/julrv/miPractica /home/julrv/miPractica/archivo /home/julrv/miPractica/usuario > raizArchivos.dat
+
+  • A todos los directorios que haz creado asignales permisos de lectura
+    y escritura para ti y solo lectura para los demas.
+ 5) chmod g-wx,o-xw miPractica/archivo miPractica/usuarios
+    chmod g-wx,o-wx miPractica
+
+
+  • A todos los directorios que haz creado asignales permisos de lectura
+    y escritura para ti y ningun permiso para los demas.
+ 6) chmod u+wr,g-rwx,o-rwx miPractica/archivo miPractica/usuarios
+    chmod u+wr,g-rwx,o-rwx miPractica
+
+
+  • Crea una copia del directorio miPractica y todo su contenido llamale
+    ejercicios.
+ 7) cp -r miPractica/ /home/julrv/ejercicios
+
+
+  • Elimina el directorio miPractica y todo su contenido.
+ 8) rm -r /home/julrv/miPractica
